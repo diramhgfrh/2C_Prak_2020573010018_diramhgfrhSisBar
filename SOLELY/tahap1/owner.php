@@ -8,11 +8,31 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>KEDAI KOPI ULON</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
 
+  <body>
+        <!--Header-->
+        <?php
+        require "header.php";
+        ?>
+        <!--Akhir Header-->
+
+        <div class="container-fluid">
+        <div class="row">
+          <div class="col-3">
+            <?php
+            require "sidebar.php";
+            ?>
+          </div>
+          <!--Akhir Sidebar-->
+          <!--Content-->
+          <div class="col-9">
+          <h2>OWNER</h2>
+          </div>
+        <!--Akhir content-->
+        </div>
+      </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
