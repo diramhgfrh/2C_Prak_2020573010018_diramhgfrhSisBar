@@ -2,7 +2,8 @@
 require "proses/koneksi.php";
   $select  = mysqli_query($conn, "SELECT * FROM tb_barang brg
   LEFT JOIN tb_peminjaman pem ON brg.kode_barang=pem.barang
-  LEFT JOIN tb_mahasiswa mhs ON pem.user=mhs.id_user");
+  LEFT JOIN tb_mahasiswa mhs ON pem.user=mhs.id_user
+  LEFT JOIN tb_user usr ON pem.user=usr.id");
 ?>
 <!doctype html>
 <html lang="en">
@@ -15,11 +16,11 @@ require "proses/koneksi.php";
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>ULON KOPI</title>
+    <title>SIPBAR = Sistem Informasi Peminjaman Barang Jurusan TIK</title>
   </head>
 
   <body>
-      <!--Header--> 
+      <!--Header-->
       <?php
       require "header.php";
       ?>
@@ -175,7 +176,7 @@ require "proses/koneksi.php";
           </div>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Kondisi Barang:</label>
-            <input name="kondisi" type="number" class="form-control" id="recipient-name">
+            <input name="kondisi" type="text" class="form-control" id="recipient-name">
           </div>
       </div>
       <div class="modal-footer">
@@ -224,11 +225,11 @@ require "proses/koneksi.php";
     </div>
   </div>
 </div>
-<!-- Akhir Modal tambah peminjaman -->
+<!-- Akhir Modal tambah pemilllllllllll.....lnjaman -->
 
 <!-- Modal list barang pinjaman  -->
 <div class="modal fade" id="listbarang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl"> 
+  <div class="modal-dialogh4 modal-xl"> 
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">List Barang Pinjaman</h5>
@@ -268,7 +269,7 @@ require "proses/koneksi.php";
         <?php echo $data['nim'] ?><br>
         <?php echo $data['prodi'] ?><br>
       </td>
-      <td><?php echo $data['waktu_peminjaman'] ?></td>
+      <td><?php echo $data['waktu_pinjam'] ?></td>
       <td><?php echo $data['waktu_pengembalian'] ?></td>     
     </tr>
 
@@ -299,7 +300,7 @@ require "proses/koneksi.php";
           </div>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Kondisi Barang:</label>
-            <input name="kondisi" type="text" class="form-control" id="recipient-name" value="<?php echo $data['kondisi'];?>">
+            <input name="kondisi" type="number" class="form-control" id="recipient-name" value="<?php echo $data['kondisi'];?>">
           </div>
       </div>
       <div class="modal-footer">

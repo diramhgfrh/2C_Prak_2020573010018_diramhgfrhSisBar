@@ -16,7 +16,7 @@ require "proses/koneksi.php";
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>ULON KOPI</title>
+    <title>SIPBAR = Sistem Informasi Peminjaman Barang Jurusan TIK</title>
   </head>
 
   <body>
@@ -108,12 +108,23 @@ require "proses/koneksi.php";
           </div>
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Kondisi Barang:</label>
-            <select class="form-select" aria-label="default select example">
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
+            <select name="kondisi" class="form-select" aria-label="Default select example">
+              <?php
+                if($data['kondisi']=='Baik'){
+                  echo '<option selected value="Baik">Baik</option>';
+                  echo '<option value="Rusak">Rusak</option>';
+                  echo '<option value="Hilang">Hilang</option>';
+                }elseif($data['kondisi']=="Rusak"){
+                  echo '<option value="Baik">Baik</option>';
+                  echo '<option selected value="Rusak">Rusak</option>';
+                  echo '<option value="Hilang">Hilang</option>';
+                }elseif($data['kondisi']=="Hilang"){
+                  echo '<option value="Baik">Baik</option>';
+                  echo '<option value="Rusak">Rusak</option>';
+                  echo '<option selected value="Hilang">Hilang</option>';
+                }
+              ?>
+            </select>
           </div>
       </div>
       <div class="modal-footer">

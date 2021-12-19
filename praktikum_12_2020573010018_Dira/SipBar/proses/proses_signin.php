@@ -12,6 +12,6 @@
         echo "<script>window.location ='../home';</script>";
     }else{
         echo "<script>alert('Mohon maaf username atau password yang anda masukkan salah');
-        window.location='../sign-in/index.php';</script>";
+        window.location='../sign-in/index.html';</script>";
     }
 ?>
