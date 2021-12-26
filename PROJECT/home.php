@@ -20,23 +20,27 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-        
+       
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Profil</a></li>
+            <li><a class="dropdown-item" href="#">Pengaturan</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
-        <!-- <li class="nav-item"> -->
-          <!-- <a class="nav-link disabled">Disabled</a> -->
-        <!-- </li> -->
+        <!--AWAL
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>-->
+
+        
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -57,7 +61,7 @@
           <!--Akhir Sidebar-->
           <!--Content-->
           <div class="col-9">
-          <h2>PEGAWAI</h2>
+          <h2>WEBSITE PEMESANAN KOPI ULON</h2>
           </div>
         <!--Akhir content-->
         </div>
